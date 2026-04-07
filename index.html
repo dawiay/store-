@@ -3,76 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darokel Store | Premium Tech</title>
-    <meta name="description" content="Discover the latest in premium tech and gadgets. Shop smartphones, VR, audio, and more.">
+    <title>Darokel Studio | Fine Art Photography</title>
+    <meta name="description" content="Darokel Studio: Minimalist, elegant, and timeless fine art photography.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="glass">
+    <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">Darokel Store</a>
-            <nav style="display: flex; align-items: center; gap: 2rem;">
+            <a href="index.html" class="logo">Darokel Studio</a>
+            <nav>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <form id="searchForm" class="search-form">
-                    <input type="text" id="searchInput" placeholder="Search products..." class="search-input">
-                    <button type="submit" class="search-btn" aria-label="Search">
-                        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                    </button>
-                </form>
             </nav>
-            <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">
-                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                <span class="cart-count">0</span>
-            </a>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-bg"></div>
-            <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 2rem;">
-                <div class="hero-content">
-                    <h1>The Future of<br>Tech is Here.</h1>
-                    <p>Experience bleeding-edge technology with our curated selection of premium electronics, audio gear, and smart accessories.</p>
-                    <div style="display: flex; gap: 1rem; align-items: center;">
-                        <a href="shop.html" class="btn btn-primary">Shop Now</a>
-                        <a href="#featured" class="btn-icon" style="padding: 1rem; border-radius: 50%;">
-                            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-img" style="flex-shrink: 0; max-width: 500px; display: none; @media(min-width: 768px) { display: block; }">
-                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Premium Tech" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); object-fit: cover; aspect-ratio: 4/5;">
-                </div>
+        <section class="hero" style="background-image: url('images/studio_hero.png'); background-size: cover; background-position: center;">
+            <div class="hero-content">
+                <h1 style="color: white;">Timeless Elegance.</h1>
+                <p style="color: rgba(255,255,255,0.8);">Minimalist, high-end photography for those who appreciate the finer details in life.</p>
+                <a href="portfolio.html" class="btn btn-outline" style="color: white; border-color: white;">View Portfolio</a>
             </div>
+            <div style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4); z-index: 1;"></div>
         </section>
 
-        <section id="featured" class="container">
-            <h2 class="section-title">New Arrivals</h2>
-            <div id="productsGrid" class="products-grid">
-                <!-- Products dynamically rendered here -->
+        <section class="container text-center">
+            <h2 style="margin-bottom: 1rem; font-size: 2.5rem;">The Art of Seeing</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 3rem auto; font-size: 1.1rem;">
+                We specialize in capturing raw emotion, elegant aesthetics, and timeless moments through a minimalist lens. Every frame tells a carefully curated story.
+            </p>
+            <a href="services.html" class="btn">Explore Services</a>
+        </section>
+        
+        <section class="container" style="padding-top: 0;">
+            <h2 class="text-center" style="margin-bottom: 3rem; font-size: 2rem;">Recent Work</h2>
+            <div id="homeGrid" class="portfolio-grid" style="grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));">
+                <!-- Injected via js -->
             </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="shop.html" class="btn" style="border: 1px solid var(--glass-border); color: var(--text-main);">View All Products</a>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="portfolio.html" class="btn btn-outline">View All Gallery</a>
             </div>
+        </section>
+        
+        <section class="container text-center" style="background: var(--bg-secondary); border-radius: 4px;">
+            <h2 style="margin-bottom: 2.5rem; font-size: 2rem;">Client Words</h2>
+            <div id="testimonialsList" style="display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto;"></div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <div class="footer-logo">Darokel Store</div>
-            <p>&copy; 2026 Darokel Store Technologies. All rights reserved.</p>
+        <div class="container" style="padding: 0;">
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Vogue</a>
+            </div>
+            <p>&copy; 2026 Darokel Studio. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('homeGrid');
+            if(grid) {
+                portfolioData.slice(0,3).forEach(item => {
+                    grid.innerHTML += `
+                        <div class="gallery-item">
+                            <img src="${item.image}" alt="${item.title}" loading="lazy">
+                            <div class="gallery-overlay" onclick="openLightbox('${item.image}', '${item.title}')">
+                                <div class="overlay-text">
+                                    <h3>${item.title}</h3>
+                                    <p>${item.category}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+            
+            const tr = document.getElementById('testimonialsList');
+            if(tr) {
+                testimonials.forEach(t => {
+                    tr.innerHTML += `
+                        <div style="font-size: 1.2rem; font-style: italic; color: #333;">
+                            "${t.text}"
+                            <div style="font-size: 0.9rem; font-weight: 600; text-transform: uppercase; font-style: normal; margin-top: 1rem; color: #000;">- ${t.name}</div>
+                        </div>
+                    `;
+                });
+            }
+        });
+    </script>
 </body>
 </html>

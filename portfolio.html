@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darokel Studio | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Darokel Studio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 6rem;">
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <h1>Our Selected Work</h1>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem;">Explore our curated galleries featuring stunning moments from weddings, portrait sessions, and commercial campaigns.</p>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="Weddings">Weddings</button>
+                <button class="filter-btn" data-filter="Portraits">Portraits</button>
+                <button class="filter-btn" data-filter="Events">Events</button>
+                <button class="filter-btn" data-filter="Commercial">Commercial</button>
+            </div>
+
+            <div id="portfolioGrid" class="portfolio-grid">
+                <!-- Injected via app.js -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="padding: 0;">
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Vogue</a>
+            </div>
+            <p>&copy; 2026 Darokel Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

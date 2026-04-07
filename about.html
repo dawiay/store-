@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darokel Studio | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Darokel Studio</a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 6rem;">
+            <div class="split-section">
+                <!-- Fallback to a placeholder portrait if profile.jpg doesn't exist, user was asked to put profile.jpg earlier -->
+                <div class="split-img">
+                    <img src="profile.jpg" alt="Dawit Ayanssa" onerror="this.src='https://images.unsplash.com/photo-1554046920-90dc206953bc?auto=format&fit=crop&q=80'">
+                </div>
+                <div class="split-content">
+                    <h2 style="margin-bottom: 0.5rem;">Dawit Ayanssa</h2>
+                    <h4 style="color: var(--accent); margin-bottom: 2rem; font-family: var(--font-main); text-transform: uppercase; letter-spacing: 2px;">Founder & Lead Photographer</h4>
+                    <p>
+                        With over a decade of experience behind the lens, I founded Darokel Studio to bridge the gap between fine art and commercial photography. My approach is rooted in minimalism—stripping away visual noise to capture the raw, unadulterated essence of every subject.
+                    </p>
+                    <p>
+                        We believe that a photograph is more than an image; it is a legacy. Whether we are shooting an editorial campaign, an intimate wedding, or a corporate gala, our philosophy remains the same: elegance through simplicity.
+                    </p>
+                    <a href="portfolio.html" class="btn" style="margin-top: 1rem;">View My Work</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container" style="background: var(--bg-secondary); padding: 4rem 2rem; border-radius: 4px;">
+            <div class="text-center">
+                <h2>Our Philosophy</h2>
+                <p style="max-width: 700px; margin: 1rem auto 0; font-style: italic; font-size: 1.2rem;">
+                    "We do not take photographs. We curate moments, frame emotions, and sculpt light."
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="padding: 0;">
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Pinterest</a>
+                <a href="#">Vogue</a>
+            </div>
+            <p>&copy; 2026 Darokel Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
